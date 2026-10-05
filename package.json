@@ -1,0 +1,16 @@
+{
+  "name": "sliding-median-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "双堆滑动中位数与过期元素清理解释后端（TypeScript + Node.js + SQLite）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "demo": "node dist/cli.js demo",
+    "test": "node dist/test/run-tests.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
