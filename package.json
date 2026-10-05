@@ -1,0 +1,26 @@
+{
+  "name": "dual-heap-median",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "双堆滑动中位数与过期元素清理解释后端（TypeScript + Node.js + SQLite）",
+  "bin": {
+    "median-cli": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/server.js",
+    "demo": "node dist/demo.js",
+    "cli": "node dist/cli/index.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
